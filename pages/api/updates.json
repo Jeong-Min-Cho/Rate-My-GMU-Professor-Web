@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "jeongmincho@outlook.com": {
+      "updates": [
+        {
+          "version": "2.2.0",
+          "update_link": "https://rate-my-gmu-professor-web.vercel.app/api/download/2.2.0"
+        }
+      ]
+    }
+  }
+}
