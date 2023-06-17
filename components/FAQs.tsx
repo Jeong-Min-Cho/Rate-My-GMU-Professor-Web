@@ -73,7 +73,7 @@ export default function FAQs() {
         </h2>
         <div className="grid pt-8 text-left border-t border-gray-200 md:gap-8 dark:border-gray-700 md:grid-cols-2">
           {faqs.map((faq) => (
-            <div key={faq.id}>
+            <div key={faq.id} className="mb-10">
               <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                 <svg
                   className="flex-shrink-0 mr-2 w-5 h-5 text-green-600 dark:text-gray-400"

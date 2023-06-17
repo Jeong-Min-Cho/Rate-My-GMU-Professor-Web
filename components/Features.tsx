@@ -17,7 +17,7 @@ export default function Features() {
         </p>
         <div className="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div>
-            <BoltIcon className="mx-auto mb-4 w-12 h-12 text-primary-600 dark:text-primary-500" />
+            <BoltIcon className="mx-auto mb-4 w-12 h-12 text-green-600 dark:text-green-500" />
             <h3 className="mb-2 text-xl font-bold dark:text-white">
               Lightweight and Efficient
             </h3>
@@ -27,7 +27,7 @@ export default function Features() {
             </p>
           </div>
           <div>
-            <SparklesIcon className="mx-auto mb-4 w-12 h-12 text-primary-600 dark:text-primary-500" />
+            <SparklesIcon className="mx-auto mb-4 w-12 h-12 text-green-600 dark:text-green-500" />
             <h3 className="mb-2 text-xl font-bold dark:text-white">
               Aesthetic Design
             </h3>
@@ -38,7 +38,7 @@ export default function Features() {
             </p>
           </div>
           <div>
-            <CheckBadgeIcon className="mx-auto mb-4 w-12 h-12 text-primary-600 dark:text-primary-500" />
+            <CheckBadgeIcon className="mx-auto mb-4 w-12 h-12 text-green-600 dark:text-green-500" />
             <h3 className="mb-2 text-xl font-bold dark:text-white">
               Optimized Performance
             </h3>
