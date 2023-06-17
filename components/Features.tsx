@@ -9,10 +9,11 @@ export default function Features() {
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center sm:py-16 lg:px-6">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          The most trusted cryptocurrency platform
+          Enhanced Features for an Unparalleled User Experience
         </h2>
         <p className="text-gray-500 sm:text-xl dark:text-gray-400">
-          Here are a few reasons why you should choose Flowbite
+          Our extension stands out with unique functionalities designed to
+          deliver efficiency, elegance, and optimal performance
         </p>
         <div className="mt-8 lg:mt-12 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div>
