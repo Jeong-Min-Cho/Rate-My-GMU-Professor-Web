@@ -3,10 +3,13 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import { Carousel } from "flowbite-react";
 
 import Image from "next/image";
-import Screenshot from "@/public/screenshot.png";
 import Logo from "@/public/logo.png";
+import WebOne from "@/public/mockups/web-1.png";
+import WebTwo from "@/public/mockups/web-2.png";
+import WebThree from "@/public/mockups/web-3.png";
 
 import NAVIGATION from "../constants/navigation";
 import Downloads from "@/components/Downloads";
@@ -151,6 +154,31 @@ export default function Hero() {
                   </p>
 
                   <Downloads />
+                  {/* <div className="min-h-fit">
+                    <Carousel slideInterval={2000}>
+                      <Image
+                        priority
+                        src={WebOne}
+                        alt="Rate My GMU Professors Screenshot-1"
+                        width={1800}
+                        height={1600}
+                      />
+                      <Image
+                        priority
+                        src={WebTwo}
+                        alt="Rate My GMU Professors Screenshot-2"
+                        width={800}
+                        height={600}
+                      />
+                      <Image
+                        priority
+                        src={WebThree}
+                        alt="Rate My GMU Professors Screenshot-3"
+                        width={800}
+                        height={600}
+                      />
+                    </Carousel>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -165,36 +193,42 @@ export default function Hero() {
                     className="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-green-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"
                     aria-hidden="true"
                   />
-
-                  {/* <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-                  <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-                    <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                      <img
-                        src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-                        alt="App screenshot"
-                        width={800}
-                        height={600}
-                        className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                      />
-                    </div>
-                  </div>
-                </div> */}
                   <div className="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0">
                     <div className="mx-auto max-w-2xl md:mx-0 md:max-w-none">
-                      {/* <img
-                      src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-                      alt="App screenshot"
-                      width={800}
-                      height={600}
-                      className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                    /> */}
-
-                      <Image
-                        priority
-                        src={Screenshot}
-                        className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                        alt="Follow us on Twitter"
-                      />
+                      <div className="flex aspect-auto md:h-[55vh] h-[35vh]">
+                        <Carousel
+                          slideInterval={3000}
+                          className="h-full"
+                          indicators={false}
+                          leftControl={false}
+                          rightControl={false}
+                        >
+                          <Image
+                            priority
+                            src={WebOne}
+                            className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-full"
+                            alt="Rate My GMU Professors Screenshot-1"
+                            width={800}
+                            height={600}
+                          />
+                          <Image
+                            priority
+                            src={WebTwo}
+                            className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-full"
+                            alt="Rate My GMU Professors Screenshot-2"
+                            width={800}
+                            height={600}
+                          />
+                          <Image
+                            priority
+                            src={WebThree}
+                            className="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 h-full"
+                            alt="Rate My GMU Professors Screenshot-3"
+                            width={800}
+                            height={600}
+                          />
+                        </Carousel>
+                      </div>
                     </div>
                     <div
                       className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 md:rounded-3xl"

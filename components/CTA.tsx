@@ -1,6 +1,7 @@
 import React from "react";
 
 import Downloads from "./Downloads";
+import { Carousel } from "flowbite-react";
 
 export default function CTA() {
   return (
