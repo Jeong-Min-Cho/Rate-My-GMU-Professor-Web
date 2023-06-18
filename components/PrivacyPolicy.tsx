@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
           <p>
             Rate My GMU Professor does not collect, transmit, distribute, or
             sell your personal data. We believe that such information is a
-            private matter and should remain so. As such, we've taken the
+            private matter and should remain so. As such, we&apos;ve taken the
             following steps to protect your privacy:
           </p>
           <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
