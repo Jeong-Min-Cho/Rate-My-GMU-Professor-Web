@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import TESTIMONIALS from "../constants/testimonials";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 

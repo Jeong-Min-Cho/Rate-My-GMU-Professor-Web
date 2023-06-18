@@ -33,8 +33,8 @@ export default function Features() {
             </h3>
             <p className="mb-4 text-gray-500 dark:text-gray-400">
               Our extension transforms the existing instructor column into a
-              customized, visually appealing format that's easy on the eyes and
-              simple to navigate.
+              customized, visually appealing format that&apos;s easy on the eyes
+              and simple to navigate.
             </p>
           </div>
           <div>
