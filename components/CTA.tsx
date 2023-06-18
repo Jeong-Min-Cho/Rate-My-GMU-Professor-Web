@@ -1,11 +1,9 @@
 import React from "react";
-
 import Downloads from "./Downloads";
-import { Carousel } from "flowbite-react";
 
 export default function CTA() {
   return (
-    <section className="bg-green-500 dark:bg-gray-900">
+    <section id="cta" className="bg-green-500 dark:bg-gray-900">
       <div className="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
         <div className="max-w-3xl p-6 bg-white border border-gray-200 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
           <div className="mx-auto max-w-screen-sm text-center">

@@ -66,7 +66,7 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section id="faqs" className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-green-500 dark:text-white">
           Frequently asked questions

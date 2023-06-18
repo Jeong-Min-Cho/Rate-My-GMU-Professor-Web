@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl text-center">
         <div className="grid lg:grid-cols-3">
           <Link
-            href="#"
+            href="/#overview"
             className="flex items-center mb-4 text-2xl font-semibold text-gray-900 lg:mb-0 dark:text-white"
           >
             <Image

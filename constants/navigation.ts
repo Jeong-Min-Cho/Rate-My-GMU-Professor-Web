@@ -1,8 +1,8 @@
 const NAVIGATION = [
-  { name: "Overview", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Testimonials", href: "#" },
-  { name: "FAQs", href: "#" },
+  { name: "Overview", href: "/#overview" },
+  { name: "Features", href: "/#features" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "FAQs", href: "/#faqs" },
   { name: "Privacy Policy", href: "/privacy-policy" },
 ];
 

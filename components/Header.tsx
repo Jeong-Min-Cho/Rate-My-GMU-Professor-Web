@@ -7,8 +7,14 @@ import Link from "next/link";
 import Logo from "@/public/logo.png";
 import NAVIGATION from "../constants/navigation";
 
+import ScrollLink from "@/components/ScrollLink";
+
+import { usePathname } from "next/navigation";
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isOnPrivacyPolicyPage = pathname === "/privacy-policy";
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -17,7 +23,7 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <Link href="/#overview" className="-m-1.5 p-1.5">
             <span className="sr-only">Rate My GMU Professors</span>
             <Image
               priority
@@ -38,20 +44,33 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {NAVIGATION.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {NAVIGATION.map((item) => {
+            return item.name !== "Privacy Policy" && !isOnPrivacyPolicyPage ? (
+              <ScrollLink
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                {item.name}
+              </ScrollLink>
+            ) : (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                {item.name}
+              </Link>
+            );
+          })}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Contact Us <span aria-hidden="true">&rarr;</span>
-          </a>
+          <Link
+            href="mailto:jeongmincho@outlook.com"
+            className="flex  text-sm font-semibold leading-6 text-green-500 hover:underline hover:scale-105 transition duration-150 ease-in-out"
+          >
+            @Jeong Min Cho
+          </Link>
         </div>
       </nav>
       <Dialog
@@ -85,22 +104,22 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {NAVIGATION.map((item) => (
-                  <Link
+                  <ScrollLink
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
-                  </Link>
+                  </ScrollLink>
                 ))}
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                <Link
+                  href="mailto:jeongmincho@outlook.com"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-blue-500 hover:bg-gray-50"
                 >
-                  Contact Us
-                </a>
+                  @Jeong Min Cho
+                </Link>
               </div>
             </div>
           </div>
