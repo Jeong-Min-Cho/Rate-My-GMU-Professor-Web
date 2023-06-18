@@ -5,7 +5,7 @@ import Edge from "@/public/edge.svg";
 
 export default function Downloads() {
   return (
-    <div className="grid grid-flow-col sm:grid-rows-1 grid-rows-2 items-center justify-center gap-4 mt-8 mx-auto">
+    <div className="grid grid-flow-col sm:grid-rows-1 grid-rows-2 items-center justify-center gap-3 mt-8 mx-auto">
       <a
         href="#"
         title=""

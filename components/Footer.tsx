@@ -47,7 +47,7 @@ export default function Footer() {
             © 2023{" "}
             <a
               href="mailto:jeongmincho@outlook.com"
-              className="text-blue-600 font-bold hover:underline"
+              className="text-green-600 font-bold hover:underline"
             >
               Jeong Min Cho
             </a>
