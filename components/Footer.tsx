@@ -2,13 +2,14 @@ import React from "react";
 
 import Logo from "@/public/logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="p-4 py-8 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
       <div className="mx-auto max-w-screen-xl text-center">
         <div className="grid lg:grid-cols-3">
-          <a
+          <Link
             href="#"
             className="flex items-center mb-4 text-2xl font-semibold text-gray-900 lg:mb-0 dark:text-white"
           >
@@ -20,27 +21,23 @@ export default function Footer() {
               alt="Rate My GMU Professors logo"
             />
             Rate My GMU Professors
-          </a>
+          </Link>
           <ul className="flex flex-wrap items-center mb-4 text-sm text-gray-500 lg:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
+              <Link
+                href="/privacy-policy"
+                className="mr-4 hover:underline md:mr-6"
+              >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
+              <Link
+                href="https://github.com/Jeong-Min-Cho/Rate-My-GMU-Professors/blob/main/LICENSE"
+                className="mr-4 hover:underline md:mr-6"
+              >
                 Licensing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -57,7 +54,7 @@ export default function Footer() {
             . All Rights Reserved.
           </span>
           <div className="flex justify-center mt-4 space-x-6 sm:mt-0">
-            <a
+            <Link
               href="https://github.com/Jeong-Min-Cho"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
             >
@@ -73,7 +70,7 @@ export default function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
