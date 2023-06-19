@@ -33,7 +33,7 @@ export default function Hero() {
                           What&apos;s new
                         </span>
                         <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                          <span>v2.2.0</span>
+                          <span>v2.3.0</span>
                           <ChevronRightIcon
                             className="h-5 w-5 text-gray-400"
                             aria-hidden="true"
