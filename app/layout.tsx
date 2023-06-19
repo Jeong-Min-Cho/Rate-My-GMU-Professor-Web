@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Rate My GMU Professors - Privacy Policy",
-  description: "Rate My GMU Professors - Privacy Policy",
+  title: "Rate My GMU Professors",
+  description: "Rate My GMU Professors",
 };
 
 export default function RootLayout({
