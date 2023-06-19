@@ -15,7 +15,7 @@ function DownloadButton({
     <Link
       href={href}
       title={`Download for ${title}`}
-      className="inline-flex items-center justify-center w-full px-2 sm:px-4 py-3 text-left text-white bg-green-900 rounded-lg sm:w-auto hover:bg-green-800 dark:bg-green-800 dark:hover:bg-green-700 dark:focus:ring-green-700 focus:outline-none focus:ring-4 focus:ring-green-300"
+      className="inline-flex items-center justify-center w-full px-2 sm:px-4 py-3 text-left text-white bg-gray-900 rounded-lg sm:w-auto hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300"
     >
       <Image
         priority
