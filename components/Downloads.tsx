@@ -35,7 +35,7 @@ function DownloadButton({
 
 export default function Downloads() {
   return (
-    <div className="grid grid-flow-col sm:grid-rows-1 grid-rows-2 items-center justify-center gap-3 mt-8 mx-auto">
+    <div className="grid grid-flow-col sm:grid-rows-1 grid-rows-2 items-center sm:justify-start md:justify-center gap-3 mt-8 mx-auto">
       {BROWSERS.map(({ href, title, imageSrc }) => (
         <DownloadButton
           key={title}
