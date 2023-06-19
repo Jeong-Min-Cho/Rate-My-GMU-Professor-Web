@@ -9,7 +9,7 @@ const BROWSERS = [
     imageSrc: Chrome,
   },
   {
-    href: "#",
+    href: "https://addons.mozilla.org/firefox/downloads/file/4126167/rate_my_gmu_professors-2.2.0.xpi",
     title: "FireFox",
     imageSrc: FireFox,
   },
