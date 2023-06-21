@@ -14,7 +14,7 @@ const BROWSERS = [
     imageSrc: FireFox,
   },
   {
-    href: "#",
+    href: "https://microsoftedge.microsoft.com/addons/detail/rate-my-gmu-professors/mdncocealnblaieehnnpglihhfelkbdj",
     title: "Edge",
     imageSrc: Edge,
   },
