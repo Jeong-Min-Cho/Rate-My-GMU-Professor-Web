@@ -59,7 +59,7 @@ const faqs = [
     question:
       "I really like this extension. How can I support its development?",
     answer:
-      "We appreciate your enthusiasm! Sharing the extension with friends and leaving a positive review on the Chrome Web Store are two great ways to support us. We're also open to suggestions for improvement, so don't hesitate to share your ideas.",
+      "We appreciate your enthusiasm! Sharing the extension with friends and leaving a positive review on the Chrome Web Store/Edge Add-ons Store are two great ways to support us. We're also open to suggestions for improvement, so don't hesitate to share your ideas.",
   },
   // More questions...
 ];
